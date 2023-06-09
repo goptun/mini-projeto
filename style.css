@@ -1,0 +1,212 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 60px 0 0; /* Espaçamento superior para o menu não ficar oculto */
+  padding: 0;
+  overflow: hidden;
+  background-color: #f8f8f8; /* Cor de fundo do menu */
+  text-align: left; /* Centraliza os itens do menu */
+}
+
+ul.menu li {
+  display: inline-block; /* Exibe os itens em uma linha */
+}
+
+ul.menu li a {
+  display: block;
+  color: #333; /* Cor do texto no menu */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.menu li a:hover {
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+.logo {
+  float: none; /* Remove o float da logo para centralizá-la */
+  display: inline-block; /* Exibe a logo na mesma linha que os itens */
+  padding: 14px 16px;
+}
+
+.logo img {
+  width: 200px; /* Define a largura da logo */
+  height: auto; /* Define a altura da logo automaticamente para manter a proporção */
+}
+
+footer {
+  background-color: #fecd19; /* Cor de fundo do footer */
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #333; /* Cor do texto no footer */
+}
+
+.search-box {
+  float: right;
+  margin: 10px;
+}
+
+.search-box input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-box input[type="submit"] {
+  padding: 8px 30px;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.banner {
+  text-align: center;
+  margin: 0px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.promotions-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fecd19; /* Cor de fundo da faixa de promoções */
+  color: #fff; /* Cor do texto na faixa de promoções */
+  padding: 10px;
+  text-align: center;
+  z-index: 999; /* Valor alto para garantir que fique acima de outros elementos */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #f00;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.card button {
+  padding: 8px 16px;
+  background-color: #ff0707;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex;
+}
+
+.heart-symbol {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: red;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
